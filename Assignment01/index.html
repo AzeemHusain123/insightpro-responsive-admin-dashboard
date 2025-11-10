@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightPro Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="print" href="css/print.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <!-- Theme Toggle -->
+        <input type="checkbox" id="theme-toggle" class="toggle">
+        
+        <!-- Header -->
+        <header>
+            <div class="logo">InsightPro</div>
+            <label for="theme-toggle" class="theme-switch">
+                <span class="slider"></span>
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </label>
+        </header>
+        
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <ul class="main-menu">
+                <li>
+                    <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                </li>
+                <li class="has-submenu">
+                    <input type="checkbox" id="users-toggle" class="submenu-toggle">
+                    <label for="users-toggle"><i class="fas fa-users"></i> Users <i class="fas fa-chevron-down arrow"></i></label>
+                    <ul class="submenu">
+                        <li><a href="#">Add User</a></li>
+                        <li><a href="#">Edit User</a></li>
+                        <li><a href="#">Delete User</a></li>
+                        <li><a href="#">View Users</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <input type="checkbox" id="sales-toggle" class="submenu-toggle">
+                    <label for="sales-toggle"><i class="fas fa-chart-line"></i> Sales <i class="fas fa-chevron-down arrow"></i></label>
+                    <ul class="submenu">
+                        <li><a href="#">View Sales</a></li>
+                        <li><a href="#">Add Sale</a></li>
+                        <li><a href="#">Edit Sale</a></li>
+                        <li><a href="#">Reports</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <input type="checkbox" id="reports-toggle" class="submenu-toggle">
+                    <label for="reports-toggle"><i class="fas fa-file-alt"></i> Reports <i class="fas fa-chevron-down arrow"></i></label>
+                    <ul class="submenu">
+                        <li><a href="#">Daily Report</a></li>
+                        <li><a href="#">Weekly Report</a></li>
+                        <li><a href="#">Monthly Report</a></li>
+                        <li><a href="#">Custom Report</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <input type="checkbox" id="settings-toggle" class="submenu-toggle">
+                    <label for="settings-toggle"><i class="fas fa-cog"></i> Settings <i class="fas fa-chevron-down arrow"></i></label>
+                    <ul class="submenu">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Preferences</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Main Content -->
+        <main>
+            <section class="overview">
+                <h2>Welcome to InsightPro Dashboard</h2>
+                <p>Monitor your key metrics, manage users, and generate reports all in one place. Stay updated with real-time insights and make data-driven decisions.</p>
+            </section>
+            
+            <section class="kpi-cards">
+                <div class="kpi-card sales">
+                    <h3>Sales</h3>
+                    <p>$12,345</p>
+                    <i class="fas fa-arrow-up icon"></i>
+                </div>
+                <div class="kpi-card users">
+                    <h3>Users</h3>
+                    <p>1,234</p>
+                    <i class="fas fa-users icon"></i>
+                </div>
+                <div class="kpi-card revenue">
+                    <h3>Revenue</h3>
+                    <p>$56,789</p>
+                    <i class="fas fa-dollar-sign icon"></i>
+                </div>
+                <div class="kpi-card visits">
+                    <h3>Visits</h3>
+                    <p>45,678</p>
+                    <i class="fas fa-eye icon"></i>
+                </div>
+                <div class="kpi-card conversions">
+                    <h3>Conversions</h3>
+                    <p>8.5%</p>
+                    <i class="fas fa-percentage icon"></i>
+                </div>
+                <div class="kpi-card bounce-rate">
+                    <h3>Bounce Rate</h3>
+                    <p>32%</p>
+                    <i class="fas fa-chart-area icon"></i>
+                </div>
+            </section>
+            
+            <section class="charts">
+                <div class="bar-chart">
+                    <h3>Sales by Month</h3>
+                    <div class="bars">
+                        <div class="bar" style="--height: 50%; --color: var(--accent-color1);"><span>Jan</span><div class="value">50%</div></div>
+                        <div class="bar" style="--height: 70%; --color: var(--accent-color2);"><span>Feb</span><div class="value">70%</div></div>
+                        <div class="bar" style="--height: 90%; --color: var(--accent-color3);"><span>Mar</span><div class="value">90%</div></div>
+                        <div class="bar" style="--height: 60%; --color: var(--accent-color4);"><span>Apr</span><div class="value">60%</div></div>
+                        <div class="bar" style="--height: 80%; --color: var(--accent-color1);"><span>May</span><div class="value">80%</div></div>
+                        <div class="bar" style="--height: 95%; --color: var(--accent-color2);"><span>Jun</span><div class="value">95%</div></div>
+                    </div>
+                </div>
+                
+                <div class="circular-chart">
+                    <h3>Goal Progress</h3>
+                    <div class="circle" style="--progress: 75%;">
+                        <span class="progress-value">75%</span>
+                    </div>
+                </div>
+                
+                <div class="pie-chart">
+                    <h3>User Distribution</h3>
+                    <ul class="pie" style="--count: 4;">
+                        <li style="--label: 'Admin'; --value: 40%; --previous-sum: 0%; --color: var(--accent-color1);"></li>
+                        <li style="--label: 'Users'; --value: 30%; --previous-sum: 40%; --color: var(--accent-color2);"></li>
+                        <li style="--label: 'Guests'; --value: 20%; --previous-sum: 70%; --color: var(--accent-color3);"></li>
+                        <li style="--label: 'Others'; --value: 10%; --previous-sum: 90%; --color: var(--accent-color4);"></li>
+                    </ul>
+                    <div class="legend">
+                        <span style="--color: var(--accent-color1);">Admin: 40%</span>
+                        <span style="--color: var(--accent-color2);">Users: 30%</span>
+                        <span style="--color: var(--accent-color3);">Guests: 20%</span>
+                        <span style="--color: var(--accent-color4);">Others: 10%</span>
+                    </div>
+                </div>
+                
+                <div class="line-chart">
+                    <h3>Revenue Over Time</h3>
+                    <ul class="line" style="--count: 6;">
+                        <li style="--value: 20%; --previous-value: 0%; --color: var(--accent-color3);"></li>
+                        <li style="--value: 50%; --previous-value: 20%; --color: var(--accent-color3);"></li>
+                        <li style="--value: 40%; --previous-value: 50%; --color: var(--accent-color3);"></li>
+                        <li style="--value: 70%; --previous-value: 40%; --color: var(--accent-color3);"></li>
+                        <li style="--value: 60%; --previous-value: 70%; --color: var(--accent-color3);"></li>
+                        <li style="--value: 90%; --previous-value: 60%; --color: var(--accent-color3);"></li>
+                    </ul>
+                    <div class="x-axis">
+                        <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="form-section">
+                <div class="form-container">
+                    <h2>Add/Edit User</h2>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                        
+                        <label for="role">Role:</label>
+                        <select id="role" name="role" aria-label="Select user role">
+                            <option value="admin">Admin</option>
+                            <option value="user">User</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                        
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="form-info">
+                    <h3>User Management Tips</h3>
+                    <ul>
+                        <li>Ensure email addresses are unique to avoid duplicates.</li>
+                        <li>Use strong passwords with at least 8 characters, including numbers and symbols.</li>
+                        <li>Assign roles carefully: Admins have full access, Users have limited, Guests view-only.</li>
+                        <li>After adding, check the recent users table below for confirmation.</li>
+                        <li>For bulk imports, contact support for CSV upload options (future feature).</li>
+                    </ul>
+                    <img src="./4563967.jpg" alt="Illustration of user management" class="form-image">
+                </div>
+            </section>
+            
+            <section class="table-section">
+                <h2>Recent Users</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Joined</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>john@example.com</td>
+                            <td>Admin</td>
+                            <td>2025-09-01</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Smith</td>
+                            <td>jane@example.com</td>
+                            <td>User</td>
+                            <td>2025-09-10</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Bob Johnson</td>
+                            <td>bob@example.com</td>
+                            <td>Guest</td>
+                            <td>2025-09-15</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Alice Brown</td>
+                            <td>alice@example.com</td>
+                            <td>User</td>
+                            <td>2025-09-20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section class="activity-log">
+                <h2>Recent Activity</h2>
+                <ul>
+                    <li><i class="fas fa-sign-in-alt"></i> John Doe logged in at 10:45 AM</li>
+                    <li><i class="fas fa-file-alt"></i> Jane Smith generated a sales report</li>
+                    <li><i class="fas fa-user-plus"></i> New user Alice Brown registered</li>
+                    <li><i class="fas fa-exclamation-triangle"></i> System alert: High traffic detected</li>
+                    <li><i class="fas fa-cog"></i> Bob Johnson updated settings</li>
+                </ul>
+            </section>
+        </main>
+        
+        <!-- Right Aside (Optional) -->
+        <aside>
+            <h3>Notifications</h3>
+            <ul>
+                <li><i class="fas fa-bell"></i> New user registered</li>
+                <li><i class="fas fa-check"></i> Sales target met</li>
+                <li><i class="fas fa-exclamation-triangle"></i> System update available</li>
+                <li><i class="fas fa-info-circle"></i> Report generated</li>
+                <li><i class="fas fa-users"></i> User activity peak</li>
+            </ul>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+                <li><a href="#"><i class="fas fa-calendar"></i> Calendar</a></li>
+            </ul>
+        </aside>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 InsightPro. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

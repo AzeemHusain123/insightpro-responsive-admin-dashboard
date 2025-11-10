@@ -1,0 +1,97 @@
+/* print.css */
+
+@page {
+    size: A4;
+    margin: 2cm;
+}
+
+body {
+    background-color: white !important;
+    color: black !important;
+    font-size: 11pt;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: block !important;
+}
+
+header, .sidebar, aside, footer, .form-section, .overview, .activity-log {
+    display: none !important;
+}
+
+main {
+    padding: 0 !important;
+}
+
+section {
+    page-break-inside: avoid;
+    margin-bottom: 2cm;
+}
+
+.kpi-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kpi-card {
+    width: 45%;
+    margin-bottom: 1cm;
+    box-shadow: none !important;
+    background: none !important;
+    border: 1px solid black;
+    text-align: left !important;
+    padding: 0.5cm;
+}
+
+.kpi-card .icon {
+    display: none;
+}
+
+.charts {
+    display: block !important;
+}
+
+.bar-chart, .circular-chart, .pie-chart, .line-chart {
+    margin-bottom: 1cm;
+}
+
+.bars {
+    height: 8cm !important;
+}
+
+.bar {
+    background-color: gray !important;
+}
+
+.circle {
+    background: conic-gradient(gray 75%, lightgray 0) !important;
+}
+
+.pie > li {
+    background: conic-gradient(transparent var(--previous-sum), gray var(--previous-sum) calc(var(--previous-sum) + var(--value)), transparent calc(var(--previous-sum) + var(--value))) !important;
+}
+
+.line > li {
+    background-color: gray !important;
+}
+
+.legend, .x-axis {
+    color: black;
+}
+
+.table-section table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.table-section th, .table-section td {
+    border: 1px solid black;
+    padding: 0.5cm;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

@@ -41,11 +41,11 @@ It was developed as a web engineering assignment to demonstrate advanced CSS tec
 3. Explore the dashboard: toggle the sidebar, switch themes, resize the browser to see responsive behavior, and print the page (Ctrl+P) for print layout.
 
 🧠 Learning Outcomes
--Mastery of CSS Grid and Flexbox for complex responsive layouts
--Use of CSS variables for theming (light/dark)
--Implementation of CSS-only interactivity via pseudo-classes (:checked)
--Creation of pure CSS visualizations (charts/progress bars)
--Understanding of print stylesheets and accessibility through semantic HTML
+- Mastery of CSS Grid and Flexbox for complex responsive layouts
+- Use of CSS variables for theming (light/dark)
+- Implementation of CSS-only interactivity via pseudo-classes (:checked)
+- Creation of pure CSS visualizations (charts/progress bars)
+- Understanding of print stylesheets and accessibility through semantic HTML
 
 📄 License
--This project is provided for educational purposes only.
+- This project is provided for educational purposes only.
